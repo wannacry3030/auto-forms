@@ -33,3 +33,20 @@ navegador.find_element('xpath', '//*[@id="SelectId_4"]/div[2]/div[11]').click()
 navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[2]/div[11]/div/div[3]/div/div/input').send_keys("Raimundo nonato")
 navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[2]/div[12]/div/div[3]/div/div/input').send_keys("distribuição")
 navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[2]/div[13]/div/div[3]/div/div/textarea').send_keys("Uso correto do EPI")
+
+
+# # ABRINDO UMA NOVA ABA E REPETINDO O PROCESSO
+# # Get the current window handle
+
+# current_handle = navegador.current_window_handle
+
+# # Open a new tab
+# navegador.execute_script("window.open('');")
+
+# # Get the handles of all open tabs
+# handles = navegador.window_handles
+
+# # Switch to the new tab
+# for handle in handles:
+#     if handle != current_handle:
+#         navegador.switch_to.window(handle)
