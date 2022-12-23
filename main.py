@@ -21,3 +21,6 @@ navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/
 navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[2]/div[4]/div/div[3]/div/div/input').send_keys("lucas.oliveira@grupohorizonte.com.br")
 navegador.find_element('xpath', '//*[@id="SelectId_1_placeholder"]/i').click()
 navegador.find_element('xpath', '//*[@id="SelectId_1"]/div[2]/div[1]').click()
+navegador.find_element('xpath', '//*[@id="SelectId_2_placeholder"]').click()
+navegador.find_element('xpath', '//*[@id="SelectId_2"]/div[2]/div[11]').click()
+navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[2]/div[7]/div/div[3]/div/div[2]/div/label/input').click()
