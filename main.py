@@ -35,19 +35,14 @@ navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/
 navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[2]/div[12]/div/div[3]/div/div/input').send_keys("distribuição")
 navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[2]/div[13]/div/div[3]/div/div/textarea').send_keys("Uso correto do EPI")
 
+#FINALIZANDO A PRIMEIRA PAGINA E ABRINDO UMA NOVA
+time.sleep(5)
 
-# # ABRINDO UMA NOVA ABA E REPETINDO O PROCESSO
-# # Get the current window handle
+#abrindo uma nova aba
+navegador.execute_script("window.open('about:black','_blank');")
 
-# current_handle = navegador.current_window_handle
+#mudando pra nova tab
+navegador.switch_to.window(navegador.window_handles[-1])
 
-# # Open a new tab
-# navegador.execute_script("window.open('');")
-
-# # Get the handles of all open tabs
-# handles = navegador.window_handles
-
-# # Switch to the new tab
-# for handle in handles:
-#     if handle != current_handle:
-#         navegador.switch_to.window(handle)
+#carregando a nova URL na aba
+navegador.get("https://forms.office.com/Pages/ResponsePage.aspx?id=GUvwznZ3lEq4mzdcd6j5NqOa5rHBDstAhO363trnMtJUNlJKNFVEOVlUTUlTNkZLR0MzQjNDQlVROCQlQCN0PWcu&wdLOR=c3AADC4C4-C6DA-4993-90EC-8BE19D05F1B6")
