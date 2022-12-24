@@ -1,3 +1,4 @@
+
 import time
 from selenium import webdriver
 from selenium.webdriver import Chrome
@@ -11,11 +12,11 @@ servico = Service(ChromeDriverManager().install())
 
 navegador = webdriver.Chrome(options=options, service=servico)
 
+for i in range(10):
+    # Your code here
+    navegador.get("https://forms.office.com/Pages/ResponsePage.aspx?id=GUvwznZ3lEq4mzdcd6j5NqOa5rHBDstAhO363trnMtJUNlJKNFVEOVlUTUlTNkZLR0MzQjNDQlVROCQlQCN0PWcu&wdLOR=c3AADC4C4-C6DA-4993-90EC-8BE19D05F1B6")
 
-#passo1
-navegador.get("https://forms.office.com/Pages/ResponsePage.aspx?id=GUvwznZ3lEq4mzdcd6j5NqOa5rHBDstAhO363trnMtJUNlJKNFVEOVlUTUlTNkZLR0MzQjNDQlVROCQlQCN0PWcu&wdLOR=c3AADC4C4-C6DA-4993-90EC-8BE19D05F1B6")
-
-time.sleep(2)
+time.sleep(1)
 #passo2
 navegador.find_element('xpath', '//*[@id="SelectId_0_placeholder"]').click()
 navegador.find_element('xpath', '//*[@id="SelectId_0"]/div[2]/div[2]').click()
@@ -35,10 +36,7 @@ navegador.find_element('xpath', '//*[@id="SelectId_4_placeholder"]/i').click()
 navegador.find_element('xpath', '//*[@id="SelectId_4"]/div[2]/div[11]').click()
 
 navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[2]/div[11]/div/div[3]/div/div/textarea').send_keys('Preenchimento do formulario')
-navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[2]/div[12]/div/div[3]/div/div/textarea').send_keys('Infestação de aedes aegypti (dengue), na sala ADM HORIZONTE..')
-# # navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[3]/div[1]/button/div').click()
 
+navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[2]/div[12]/div/div[3]/div/div/textarea').send_keys("Infestação de aedes aegypti (dengue), na sala ADM HORIZONTE..")
 
-
-
-
+navegador.find_element('xpath', '//*[@id="form-main-content"]/div/div[1]/div[2]/div[3]/div[1]/button/div').click()
