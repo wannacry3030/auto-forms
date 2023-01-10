@@ -54,6 +54,8 @@ navegador.find_element('xpath', '/html/body/div/div/div/div/div[1]/div/div/div[1
 #13
 navegador.find_element('xpath', '/html/body/div/div/div/div/div[1]/div/div/div[1]/div[2]/div[2]/div[13]/div/div[3]/div/div/textarea').send_keys('Uso correto do EPI.')
 #14 CLICK FINAL
-navegador.find_element('xpath', '//*[@id="SelectId_4"]/div[2]/div[11]').click()
+navegador.find_element('xpath', '//*[@id="cover-page-root"]/div[1]/div[2]/div[3]/div[1]/button').click()
+
+time.sleep(2)
 
 navegador.quit()
