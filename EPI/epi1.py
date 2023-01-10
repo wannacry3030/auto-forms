@@ -40,8 +40,20 @@ navegador.find_element('xpath', '/html/body/div/div/div/div/div[1]/div/div/div[1
 #8
 navegador.find_element('xpath', '/html/body/div/div/div/div/div[1]/div/div/div[1]/div[2]/div[2]/div[8]/div/div[3]/div/div[2]/div/label/input').click()
 #9
-navegador.find_element('xpath', '//*[@id="SelectId_7_placeholder"]').click()
+navegador.find_element('xpath', '//*[@id="SelectId_3_placeholder"]').click()
 #9.1
 navegador.find_element('xpath', '/html/body/div/div/div/div/div[1]/div/div/div[1]/div[2]/div[2]/div[9]/div/div[3]/div/div/div[2]/div[3]').click()
 #10
-navegador.find_element('xpath', '')
+navegador.find_element('xpath', '//*[@id="SelectId_4_placeholder"]').click()
+#10.1
+navegador.find_element('xpath', '//*[@id="SelectId_4"]/div[2]/div[11]').click()
+#11 NOME  
+navegador.find_element('xpath', '/html/body/div/div/div/div/div[1]/div/div/div[1]/div[2]/div[2]/div[11]/div/div[3]/div/div/input').send_keys('alex furtado de souza e sá')
+#12 
+navegador.find_element('xpath', '/html/body/div/div/div/div/div[1]/div/div/div[1]/div[2]/div[2]/div[12]/div/div[3]/div/div/input').send_keys('distribuição')
+#13
+navegador.find_element('xpath', '/html/body/div/div/div/div/div[1]/div/div/div[1]/div[2]/div[2]/div[13]/div/div[3]/div/div/textarea').send_keys('Uso correto do EPI.')
+#14 CLICK FINAL
+navegador.find_element('xpath', '//*[@id="SelectId_4"]/div[2]/div[11]').click()
+
+navegador.quit()
